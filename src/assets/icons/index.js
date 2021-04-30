@@ -1,0 +1,18 @@
+import IconAkun from './accountx.svg'
+import IconAkunActive from './accountv.svg'
+import IconHome from './homex.svg'
+import IconHomeActive from './homev.svg'
+import IconEform from './eformx.svg'
+import IconEformActive from './eformv.svg'
+import IconVideo from './videox.svg'
+import IconVideoActive from './videov.svg'
+import Eabsensi from './eabsensi.svg'
+import Eleave from './eleave.svg'
+import Performance from './performance.svg'
+import Epay from './epay.svg'
+import Ehazard from './ehazard.svg'
+import Other from './other.svg'
+import Item from './item.svg'
+import Arrow from './arrow.svg'
+
+export {Arrow, Item, Eabsensi, Eleave, Performance, Epay, Ehazard, Other ,IconAkun, IconAkunActive, IconHome, IconHomeActive, IconEform, IconEformActive, IconVideo, IconVideoActive}
