@@ -1,0 +1,14 @@
+com/mykpcnorm/BuildConfig.java
+ com.mykpcnorm.BuildConfig
+com/mykpcnorm/MainActivity.java
+ com.mykpcnorm.MainActivity
+com/mykpcnorm/ReactNativeFlipper.java
+ com.mykpcnorm.ReactNativeFlipper
+ com.mykpcnorm.ReactNativeFlipper$1
+ com.mykpcnorm.ReactNativeFlipper$2
+ com.mykpcnorm.ReactNativeFlipper$2$1
+com/mykpcnorm/MainApplication.java
+ com.mykpcnorm.MainApplication
+ com.mykpcnorm.MainApplication$1
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
