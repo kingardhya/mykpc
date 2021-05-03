@@ -6,5 +6,6 @@ import PositionHistory from './PositionHistory'
 import Profile from './Profile'
 import TrainingHistory from './TrainingHistory'
 import VideoList from './VideoList'
+import EformMenu from './EformMenu'
 
-export {BottomNavigator, AbsenHome, ButtonIcon, News,PositionHistory, Profile, TrainingHistory, VideoList}
+export {BottomNavigator, AbsenHome, ButtonIcon, News,PositionHistory, Profile, TrainingHistory, VideoList, EformMenu}
