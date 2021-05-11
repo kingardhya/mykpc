@@ -1,23 +1,26 @@
 import React from 'react'
-import { StyleSheet, Text, View, ScrollView , Dimensions, TouchableOpacity} from 'react-native'
-import { AbsenHome, ButtonIcon , News} from '../../components'
+import { StyleSheet, Text, View, ScrollView , ImageBackground, Dimensions, TouchableOpacity} from 'react-native'
+import { AbsenHome, ButtonIcon , EformMenu, News} from '../../components'
+import { Header, Logo, LogoHome, UserCircle} from '../../assets'
 
 const Eform = () => {
     return (
         <View>
-            <TouchableOpacity style={styles.container}>
-            <ScrollView showsVerticalScrollIndicator={false}>
             
+            <ScrollView showsVerticalScrollIndicator={false}>
+            <ImageBackground 
+                source={Header} 
+                style={styles.header}>
+            </ImageBackground>
             <View style={styles.news}>
                 <Text style={styles.label}>E-Form</Text>
-                <News title="Berita 1"/>
-                <News title="Berita 2"/>
-                <News title="Berita 3"/>
-                <News title="Berita 4"/>
+                <EformMenu title="New Report"/>
+                <EformMenu title="Approval E-Form"/>
+                <EformMenu title="History Report"/>
             </View>
             
             </ScrollView>
-            </TouchableOpacity>
+            
         </View>
     )
 }
@@ -28,6 +31,12 @@ const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
 
 const styles = StyleSheet.create({
+    header: {
+        width: windowWidth*1,
+        height: windowHeight*0.38,
+        paddingHorizontal: 30,
+        paddingTop: 5
+    },
     container: {
         padding: 17,
         backgroundColor: 'white',
