@@ -59,5 +59,10 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 18,
         fontFamily: 'TitilliumWeb-Bold'
+    },
+    label: {
+        fontSize: 30,
+        fontFamily: 'TitilliumWeb-Bold',
+        textAlign: 'center'
     }
 })
