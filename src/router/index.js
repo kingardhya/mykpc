@@ -24,9 +24,9 @@ const MainApp = () => {
 
 const Router = () => {
     return (
-        <Stack.Navigator initialRouteName="Login">
-            <Stack.Screen name="Login" component={Login} options={{headerShown:false}}/>
+        <Stack.Navigator initialRouteName="Splash">
             <Stack.Screen name="Splash" component={Splash} options={{headerShown:false}}/>
+            <Stack.Screen name="Login" component={Login} options={{headerShown:false}}/>
             <Stack.Screen name="MainApp" component={MainApp} options={{headerShown:false}}/>
               
         </Stack.Navigator>

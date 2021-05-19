@@ -18,7 +18,7 @@ const Login = ({navigation}) => {
             <TextInput placeholder="Password" placeholderColor="#c4c3cb" style={styles.loginFormTextInput} secureTextEntry={true}/>
             <Button
               buttonStyle={styles.loginButton}
-              onPress={() => navigation.navigate('Splash')}
+              onPress={() => navigation.navigate('MainApp')}
               title="Login"
             />
 
