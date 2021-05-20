@@ -7,6 +7,12 @@ function Eform ({navigation}){
     const pressHandler = () => {
         navigation.navigate('EformNew');
     }
+    const pressHandler1 = () => {
+        navigation.navigate('EformListApproval');
+    }
+    const pressHandler2 = () => {
+        navigation.navigate('EformHistory');
+    }
 
     return (
         <View>
@@ -21,10 +27,10 @@ function Eform ({navigation}){
                 <TouchableOpacity onPress={pressHandler}>
                     <EformMenu title="New Report"/>
                 </TouchableOpacity>
-                <TouchableOpacity onPress={pressHandler}>
+                <TouchableOpacity onPress={pressHandler1}>
                     <EformMenu title="Approval E-Form"/>
                 </TouchableOpacity>
-                <TouchableOpacity onPress={pressHandler}>
+                <TouchableOpacity onPress={pressHandler2}>
                     <EformMenu title="History Report"/>
                     </TouchableOpacity>
             </View>

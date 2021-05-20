@@ -1,9 +1,27 @@
 import React from 'react'
-import { Dimensions, StyleSheet, Text, View , ImageBackground, Image, ScrollView} from 'react-native'
+import { Dimensions, StyleSheet, Text, View , ImageBackground, Image, ScrollView, TouchableOpacity} from 'react-native'
 import { Header, Logo, LogoHome} from '../../assets'
 import { AbsenHome, ButtonIcon , News} from '../../components'
 
-const Home = () => {
+function Home ({navigation}){
+
+    const pressHandler = () => {
+        navigation.navigate('Eabsensi');   
+    }
+    const pressHandler1 = () => {
+        navigation.navigate('Eleave');   
+    }
+    const pressHandler2 = () => {
+        navigation.navigate('PerformanceEmployee');   
+    }
+    const pressHandler3 = () => {
+        navigation.navigate('Epay');   
+    }
+    const pressHandler4 = () => {
+        navigation.navigate('Ehazard');   
+    }
+
+
     return (
         <View>
             <ScrollView showsVerticalScrollIndicator={false}>
@@ -22,12 +40,24 @@ const Home = () => {
             <View style={styles.menu}>
                 <Text style={styles.label}>Menu</Text>
                 <View style={styles.iconmenu}>
-                    <ButtonIcon title="Eabsensi"/>
-                    <ButtonIcon title="Eleave"/>
-                    <ButtonIcon title="Performance"/>
-                    <ButtonIcon title="Epay"/>
-                    <ButtonIcon title="Ehazard"/>
-                    <ButtonIcon title="Other"/>
+                    <TouchableOpacity onPress={pressHandler}>
+                        <ButtonIcon title="Eabsensi"/>
+                    </TouchableOpacity>
+                    <TouchableOpacity onPress={pressHandler1}>
+                        <ButtonIcon title="Eleave"/>
+                    </TouchableOpacity>
+                    <TouchableOpacity onPress={pressHandler2}> 
+                        <ButtonIcon title="Performance"/>
+                    </TouchableOpacity>
+                    <TouchableOpacity onPress={pressHandler3}>
+                        <ButtonIcon title="Epay"/>
+                    </TouchableOpacity>
+                    <TouchableOpacity onPress={pressHandler4}>
+                        <ButtonIcon title="Ehazard"/>
+                    </TouchableOpacity>
+                    <TouchableOpacity>
+                        <ButtonIcon title="Other"/>
+                    </TouchableOpacity>
                 </View>
             </View>
             <View style={styles.news}>

@@ -5,7 +5,8 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import {Home, Akun, Splash, Video, Eform, Login , EformNew, EformHistory, EformListApproval,Eabsensi, 
         EabsensiCheck, EabsensiCorrection, EabsensiHistory, Eleave, EleaveApproval, EleaveHistory, 
         EleaveListApproval, EleaveNew, Epay, EpayHistory, EpayThisMonth, PerformanceEmployee, 
-        PerformanceEmployeeHistory} from '../pages';
+        PerformanceEmployeeHistory, Ehazard, EhazardNew, EhazardApproval,
+        EhazardHistory} from '../pages';
 import {BottomNavigator} from '../components/';
 
 
@@ -32,23 +33,27 @@ const Router = () => {
             <Stack.Screen name="Login" component={Login} options={{headerShown:false}}/>
             <Stack.Screen name="MainApp" component={MainApp} options={{headerShown:false}}/>
             <Stack.Screen name="Eform" component={Eform} options={{headerShown:false}}/>
-            <Stack.Screen name="EformNew" component={EformNew} options={{headerShown:false}}/>
-            <Stack.Screen name="EformHistory" component={EformHistory} options={{headerShown:false}}/>
-            <Stack.Screen name="EformListApproval" component={EformListApproval} options={{headerShown:false}}/>
+            <Stack.Screen name="EformNew" component={EformNew} options={{headerShown:true}}/>
+            <Stack.Screen name="EformHistory" component={EformHistory}/>
+            <Stack.Screen name="EformListApproval" component={EformListApproval} />
             <Stack.Screen name="Eabsensi" component={Eabsensi} options={{headerShown:false}}/>
-            <Stack.Screen name="EabsensiCheck" component={EabsensiCheck} options={{headerShown:false}}/>
-            <Stack.Screen name="EabsensiCorrection" component={EabsensiCorrection} options={{headerShown:false}}/>
-            <Stack.Screen name="EabsensiHistory" component={EabsensiHistory} options={{headerShown:false}}/>
+            <Stack.Screen name="EabsensiCheck" component={EabsensiCheck} />
+            <Stack.Screen name="EabsensiCorrection" component={EabsensiCorrection} />
+            <Stack.Screen name="EabsensiHistory" component={EabsensiHistory} />
             <Stack.Screen name="Eleave" component={Eleave} options={{headerShown:false}}/>
-            <Stack.Screen name="EleaveApproval" component={EleaveApproval} options={{headerShown:false}}/>
-            <Stack.Screen name="EleaveHistory" component={EleaveHistory} options={{headerShown:false}}/>
-            <Stack.Screen name="EleaveListApproval" component={EleaveListApproval} options={{headerShown:false}}/>
-            <Stack.Screen name="EleaveNew" component={EleaveNew} options={{headerShown:false}}/>
+            <Stack.Screen name="EleaveApproval" component={EleaveApproval} />
+            <Stack.Screen name="EleaveHistory" component={EleaveHistory} />
+            <Stack.Screen name="EleaveListApproval" component={EleaveListApproval} />
+            <Stack.Screen name="EleaveNew" component={EleaveNew} />
             <Stack.Screen name="Epay" component={Epay} options={{headerShown:false}}/>
-            <Stack.Screen name="EpayHistory" component={EpayHistory} options={{headerShown:false}}/>
-            <Stack.Screen name="EpayThisMonth" component={EpayThisMonth} options={{headerShown:false}}/>
+            <Stack.Screen name="EpayHistory" component={EpayHistory} />
+            <Stack.Screen name="EpayThisMonth" component={EpayThisMonth}/>
             <Stack.Screen name="PerformanceEmployee" component={PerformanceEmployee} options={{headerShown:false}}/>
-            <Stack.Screen name="PerformanceEmployeeHistory" component={PerformanceEmployeeHistory} options={{headerShown:false}}/>
+            <Stack.Screen name="PerformanceEmployeeHistory" component={PerformanceEmployeeHistory} />
+            <Stack.Screen name="Ehazard" component={Ehazard} options={{headerShown:false}}/>
+            <Stack.Screen name="EhazardNew" component={EhazardNew} options={{headerShown:false}}/>
+            <Stack.Screen name="EhazardApproval" component={EhazardApproval} options={{headerShown:false}}/>
+            <Stack.Screen name="EhazardHistory" component={EhazardHistory} options={{headerShown:false}}/>
               
         </Stack.Navigator>
     )

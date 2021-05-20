@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native'
 const Eabsensi = () => {
     return (
         <View>
-            <Text></Text>
+            <Text>Menu Absensi</Text>
         </View>
     )
 }

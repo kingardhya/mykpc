@@ -16,12 +16,12 @@ const ButtonIcon = ({title, type}) => {
     }
 
     return (
-        <TouchableOpacity style={styles.container}>
+        <View style={styles.container}>
             <View style={styles.button}>
                 <Icon />
             </View>
             <Text style={styles.title}>{title} </Text>
-        </TouchableOpacity>
+        </View>
     )
 }
 

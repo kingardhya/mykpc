@@ -1,14 +1,14 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
-const Epay = () => {
+const Ehazard = () => {
     return (
         <View>
-            <Text>Epay Halaman</Text>
+            <Text>E Hazard</Text>
         </View>
     )
 }
 
-export default Epay
+export default Ehazard
 
 const styles = StyleSheet.create({})

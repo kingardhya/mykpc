@@ -21,8 +21,14 @@ import EpayHistory from './Epay/EpayHistory'
 import EpayThisMonth from './Epay/EpayThisMonth'
 import PerformanceEmployee from './PerformanceEmployee'
 import PerformanceEmployeeHistory from './PerformanceEmployee/PerformanceEmployeeHistory'
+import Ehazard from './Ehazard'
+import EhazardNew from './Ehazard/EhazardNew'
+import EhazardHistory from './Ehazard/EhazardHistory'
+import EhazardApproval from './Ehazard/EhazardApproval'
+
 
 
 export {Home, Akun, Splash, Eform, Video, Login, EformNew, EformHistory, EformListApproval,Eabsensi, EabsensiCheck,
         EabsensiCorrection, EabsensiHistory, Eleave, EleaveApproval, EleaveHistory, EleaveListApproval, EleaveNew,
-        Epay, EpayHistory, EpayThisMonth, PerformanceEmployee, PerformanceEmployeeHistory}
+        Epay, EpayHistory, EpayThisMonth, PerformanceEmployee, PerformanceEmployeeHistory, Ehazard, EhazardNew,
+        EhazardHistory, EhazardApproval}
