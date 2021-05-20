@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native'
 const EformNew = () => {
     return (
         <View>
-            <Text></Text>
+            <Text>Ini halaman New Eform</Text>
         </View>
     )
 }

@@ -3,7 +3,11 @@ import { StyleSheet, Text, View, ScrollView , ImageBackground, Dimensions, Touch
 import { AbsenHome, ButtonIcon , EformMenu, News} from '../../components'
 import { Header, Logo, LogoHome, UserCircle} from '../../assets'
 
-const Eform = () => {
+function Eform ({navigation}){
+    const pressHandler = () => {
+        navigation.navigate('EformNew');
+    }
+
     return (
         <View>
             
@@ -14,10 +18,15 @@ const Eform = () => {
                 <Text style={styles.label}>E-Form</Text>
             </ImageBackground>
             <View style={styles.eform}>
-                
-                <EformMenu title="New Report"/>
-                <EformMenu title="Approval E-Form"/>
-                <EformMenu title="History Report"/>
+                <TouchableOpacity onPress={pressHandler}>
+                    <EformMenu title="New Report"/>
+                </TouchableOpacity>
+                <TouchableOpacity onPress={pressHandler}>
+                    <EformMenu title="Approval E-Form"/>
+                </TouchableOpacity>
+                <TouchableOpacity onPress={pressHandler}>
+                    <EformMenu title="History Report"/>
+                    </TouchableOpacity>
             </View>
             
             </ScrollView>

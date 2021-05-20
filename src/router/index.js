@@ -31,6 +31,7 @@ const Router = () => {
             <Stack.Screen name="Splash" component={Splash} options={{headerShown:false}}/>
             <Stack.Screen name="Login" component={Login} options={{headerShown:false}}/>
             <Stack.Screen name="MainApp" component={MainApp} options={{headerShown:false}}/>
+            <Stack.Screen name="Eform" component={Eform} options={{headerShown:false}}/>
             <Stack.Screen name="EformNew" component={EformNew} options={{headerShown:false}}/>
             <Stack.Screen name="EformHistory" component={EformHistory} options={{headerShown:false}}/>
             <Stack.Screen name="EformListApproval" component={EformListApproval} options={{headerShown:false}}/>

@@ -1,16 +1,20 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { StyleSheet, Text, View , Dimensions, TouchableOpacity} from 'react-native'
 import {Item} from '../..//assets';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 
-const EformMenu = ({title}) => {
+function EformMenu ({title}) {
+
+
     return (
-        <TouchableOpacity style={styles.container}>
+        <View style={styles.container}>
             <Item/>
             <View style={styles.text}>
                 <Text style={styles.title}>{title}</Text>
             </View>
 
-        </TouchableOpacity>
+        </View>
     )
 }
 
