@@ -11,9 +11,10 @@ const Eform = () => {
             <ImageBackground 
                 source={Header} 
                 style={styles.header}>
+                <Text style={styles.label}>E-Form</Text>
             </ImageBackground>
             <View style={styles.eform}>
-                <Text style={styles.label}>E-Form</Text>
+                
                 <EformMenu title="New Report"/>
                 <EformMenu title="Approval E-Form"/>
                 <EformMenu title="History Report"/>
@@ -61,12 +62,14 @@ const styles = StyleSheet.create({
         fontFamily: 'TitilliumWeb-Bold'
     },
     label: {
+        paddingTop: 30,
         fontSize: 30,
         fontFamily: 'TitilliumWeb-Bold',
         textAlign: 'center'
     },
     eform: {
         paddingHorizontal: 30,
-        paddingTop: 1
+        paddingTop: 1,
+        marginTop: -windowHeight*0.1
     }
 })
