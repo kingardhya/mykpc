@@ -22,10 +22,10 @@ function Epay ({navigation}){
             </ImageBackground>
             <View style={styles.eform}>
                 <TouchableOpacity onPress={pressHandler}>
-                    <EformMenu title="Payslip This Month"/>
+                    <EformMenu title="Payslip This Month" type="listappr"/>
                 </TouchableOpacity>
                 <TouchableOpacity onPress={pressHandler1}>
-                    <EformMenu title="History Payslip"/>
+                    <EformMenu title="History Payslip" type="history"/>
                     </TouchableOpacity>
             </View>
             

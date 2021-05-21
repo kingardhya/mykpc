@@ -26,13 +26,13 @@ function Eabsensi ({navigation}){
             </ImageBackground>
             <View style={styles.eform}>
                 <TouchableOpacity onPress={pressHandler}>
-                    <EformMenu title="Check In-Check Out"/>
+                    <EformMenu title="Check In-Check Out" type="new"/>
                 </TouchableOpacity>
                 <TouchableOpacity onPress={pressHandler1}>
-                    <EformMenu title="Correction Absensi Approval"/>
+                    <EformMenu title="Correction Absensi Approval" type="listappr"/>
                 </TouchableOpacity>
                 <TouchableOpacity onPress={pressHandler2}>
-                    <EformMenu title="History Absensi"/>
+                    <EformMenu title="History Absensi" type="history"/>
                     </TouchableOpacity>
             </View>
             

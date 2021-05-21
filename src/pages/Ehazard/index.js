@@ -25,13 +25,13 @@ function Ehazard ({navigation}){
             </ImageBackground>
             <View style={styles.eform}>
                 <TouchableOpacity onPress={pressHandler}>
-                    <EformMenu title="New Report"/>
+                    <EformMenu title="New Report" type="new"/>
                 </TouchableOpacity>
                 <TouchableOpacity onPress={pressHandler1}>
-                    <EformMenu title="Approval E-Hazard"/>
+                    <EformMenu title="Approval E-Hazard" type="listappr"/>
                 </TouchableOpacity>
                 <TouchableOpacity onPress={pressHandler2}>
-                    <EformMenu title="History Report"/>
+                    <EformMenu title="History Report" type="history"/>
                     </TouchableOpacity>
             </View>
             

@@ -19,7 +19,7 @@ function PerformanceEmployee({navigation}){
         </ImageBackground>
         <View style={styles.eform}>
             <TouchableOpacity onPress={pressHandler}>
-                <EformMenu title="History Performance"/>
+                <EformMenu title="History Performance" type="history"/>
                 </TouchableOpacity>
         </View>
         

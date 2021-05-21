@@ -1,15 +1,22 @@
 import React, { Component } from 'react'
 import { StyleSheet, Text, View , Dimensions, TouchableOpacity} from 'react-native'
-import {Item} from '../..//assets';
+import {Item, Doc, New, History, Listappr} from '../../assets';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
-function EformMenu ({title}) {
+function EformMenu ({title, type}) {
 
+    const Icon = () => {
+        if(type === "doc") return <Doc/>
+        if(type === "new") return <New/>
+        if(type === "history") return <History/>
+        if(type === "listappr") return <Listappr/>
+        return <Item/>
+    }
 
     return (
         <View style={styles.container}>
-            <Item/>
+            <Icon/>
             <View style={styles.text}>
                 <Text style={styles.title}>{title}</Text>
             </View>

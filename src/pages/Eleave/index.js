@@ -25,22 +25,22 @@ function Eleave({navigation}){
             </ImageBackground>
             <View style={styles.eform}>
                 <TouchableOpacity onPress={pressHandler}>
-                    <EformMenu title="New Leave"/>
+                    <EformMenu title="New Leave" type="new"/>
                 </TouchableOpacity>
                 <TouchableOpacity >
-                    <EformMenu title="Leave Without Payment Request"/>
+                    <EformMenu title="Leave Without Payment Request" type="new"/>
                 </TouchableOpacity>
                 <TouchableOpacity>
-                    <EformMenu title="Leave With Payment Request"/>
+                    <EformMenu title="Leave With Payment Request" type="new"/>
                 </TouchableOpacity>
                 <TouchableOpacity >
-                    <EformMenu title="Out of Procedure Request"/>
+                    <EformMenu title="Out of Procedure Request" type="new"/>
                 </TouchableOpacity>
                 <TouchableOpacity onPress={pressHandler4}>
-                    <EformMenu title="Approval E-Leave"/>
+                    <EformMenu title="Approval E-Leave" type="listappr"/>
                 </TouchableOpacity>
                 <TouchableOpacity onPress={pressHandler5}>
-                    <EformMenu title="History E-Leave"/>
+                    <EformMenu title="History E-Leave" type="history"/>
                 </TouchableOpacity>
             </View>
             

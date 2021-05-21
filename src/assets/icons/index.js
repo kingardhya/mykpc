@@ -14,5 +14,10 @@ import Ehazard from './ehazard.svg'
 import Other from './other.svg'
 import Item from './item.svg'
 import Arrow from './arrow.svg'
+import Doc from './doc.svg'
+import History from './history.svg'
+import Listappr from './listappr.svg'
+import New from './new.svg'
 
-export {Arrow, Item, Eabsensi, Eleave, Performance, Epay, Ehazard, Other ,IconAkun, IconAkunActive, IconHome, IconHomeActive, IconEform, IconEformActive, IconVideo, IconVideoActive}
+export {New, Listappr, History, Doc, Arrow, Item, Eabsensi, Eleave, Performance, Epay, Ehazard, Other ,IconAkun, IconAkunActive, 
+        IconHome, IconHomeActive, IconEform, IconEformActive, IconVideo, IconVideoActive}
