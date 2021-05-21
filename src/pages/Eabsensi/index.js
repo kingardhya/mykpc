@@ -6,13 +6,13 @@ import { Header, Logo, LogoHome, UserCircle} from '../../assets'
 function Eabsensi ({navigation}){
 
     const pressHandler = () => {
-        navigation.navigate('EformNew');
+        navigation.navigate('EabsensiCheck');
     }
     const pressHandler1 = () => {
-        navigation.navigate('EformListApproval');
+        navigation.navigate('EabsensiCorrection');
     }
     const pressHandler2 = () => {
-        navigation.navigate('EformHistory');
+        navigation.navigate('EabsensiHistory');
     }
 
     return (
@@ -26,13 +26,13 @@ function Eabsensi ({navigation}){
             </ImageBackground>
             <View style={styles.eform}>
                 <TouchableOpacity onPress={pressHandler}>
-                    <EformMenu title="New Report"/>
+                    <EformMenu title="Check In-Check Out"/>
                 </TouchableOpacity>
                 <TouchableOpacity onPress={pressHandler1}>
-                    <EformMenu title="Approval E-Form"/>
+                    <EformMenu title="Correction Absensi Approval"/>
                 </TouchableOpacity>
                 <TouchableOpacity onPress={pressHandler2}>
-                    <EformMenu title="History Report"/>
+                    <EformMenu title="History Absensi"/>
                     </TouchableOpacity>
             </View>
             

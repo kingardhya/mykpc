@@ -5,13 +5,13 @@ import { Header, Logo, LogoHome, UserCircle} from '../../assets'
 
 function Ehazard ({navigation}){
     const pressHandler = () => {
-        navigation.navigate('EformNew');
+        navigation.navigate('EhazardNew');
     }
     const pressHandler1 = () => {
-        navigation.navigate('EformListApproval');
+        navigation.navigate('EhazardApproval');
     }
     const pressHandler2 = () => {
-        navigation.navigate('EformHistory');
+        navigation.navigate('EhazardHistory');
     }
 
     return (
@@ -28,7 +28,7 @@ function Ehazard ({navigation}){
                     <EformMenu title="New Report"/>
                 </TouchableOpacity>
                 <TouchableOpacity onPress={pressHandler1}>
-                    <EformMenu title="Approval E-Form"/>
+                    <EformMenu title="Approval E-Hazard"/>
                 </TouchableOpacity>
                 <TouchableOpacity onPress={pressHandler2}>
                     <EformMenu title="History Report"/>

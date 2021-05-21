@@ -5,13 +5,10 @@ import { Header, Logo, LogoHome, UserCircle} from '../../assets'
 
 function Epay ({navigation}){
     const pressHandler = () => {
-        navigation.navigate('EformNew');
+        navigation.navigate('EpayThisMonth');
     }
     const pressHandler1 = () => {
-        navigation.navigate('EformListApproval');
-    }
-    const pressHandler2 = () => {
-        navigation.navigate('EformHistory');
+        navigation.navigate('EpayHistory');
     }
 
     return (
@@ -25,13 +22,10 @@ function Epay ({navigation}){
             </ImageBackground>
             <View style={styles.eform}>
                 <TouchableOpacity onPress={pressHandler}>
-                    <EformMenu title="New Report"/>
+                    <EformMenu title="Payslip This Month"/>
                 </TouchableOpacity>
                 <TouchableOpacity onPress={pressHandler1}>
-                    <EformMenu title="Approval E-Form"/>
-                </TouchableOpacity>
-                <TouchableOpacity onPress={pressHandler2}>
-                    <EformMenu title="History Report"/>
+                    <EformMenu title="History Payslip"/>
                     </TouchableOpacity>
             </View>
             

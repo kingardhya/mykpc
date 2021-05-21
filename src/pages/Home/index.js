@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
     header: {
         width: windowWidth*1,
         height: windowHeight*0.33,
-        paddingHorizontal: 30,
+        paddingHorizontal: windowWidth*0.09,
         paddingTop: 5
     },
     logo: {

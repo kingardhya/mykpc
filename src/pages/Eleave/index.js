@@ -5,13 +5,13 @@ import { Header, Logo, LogoHome, UserCircle} from '../../assets'
 
 function Eleave({navigation}){
     const pressHandler = () => {
-        navigation.navigate('EformNew');
+        navigation.navigate('EleaveNew');
     }
-    const pressHandler1 = () => {
-        navigation.navigate('EformListApproval');
+    const pressHandler4 = () => {
+        navigation.navigate('EleaveListApproval');
     }
-    const pressHandler2 = () => {
-        navigation.navigate('EformHistory');
+    const pressHandler5 = () => {
+        navigation.navigate('EleaveHistory');
     }
 
     return (
@@ -25,14 +25,23 @@ function Eleave({navigation}){
             </ImageBackground>
             <View style={styles.eform}>
                 <TouchableOpacity onPress={pressHandler}>
-                    <EformMenu title="New Report"/>
+                    <EformMenu title="New Leave"/>
                 </TouchableOpacity>
-                <TouchableOpacity onPress={pressHandler1}>
-                    <EformMenu title="Approval E-Form"/>
+                <TouchableOpacity >
+                    <EformMenu title="Leave Without Payment Request"/>
                 </TouchableOpacity>
-                <TouchableOpacity onPress={pressHandler2}>
-                    <EformMenu title="History Report"/>
-                    </TouchableOpacity>
+                <TouchableOpacity>
+                    <EformMenu title="Leave With Payment Request"/>
+                </TouchableOpacity>
+                <TouchableOpacity >
+                    <EformMenu title="Out of Procedure Request"/>
+                </TouchableOpacity>
+                <TouchableOpacity onPress={pressHandler4}>
+                    <EformMenu title="Approval E-Leave"/>
+                </TouchableOpacity>
+                <TouchableOpacity onPress={pressHandler5}>
+                    <EformMenu title="History E-Leave"/>
+                </TouchableOpacity>
             </View>
             
             </ScrollView>
