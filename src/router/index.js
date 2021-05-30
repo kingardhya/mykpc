@@ -2,7 +2,7 @@ import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import {Home, Akun, Splash, Video, Eform, Login , EformNew, EformHistory, EformListApproval,Eabsensi, 
+import {Home, Akun, Splash, Video, Eform, Login , EformNew, EformHistory, EformListApproval, Eabsensi, 
         EabsensiCheck, EabsensiCorrection, EabsensiHistory, Eleave, EleaveApproval, EleaveHistory, 
         EleaveListApproval, EleaveNew, Epay, EpayHistory, EpayThisMonth, PerformanceEmployee, 
         PerformanceEmployeeHistory, Ehazard, EhazardNew, EhazardApproval,
@@ -24,7 +24,60 @@ const MainApp = () => {
     )
 }
 
+// const Eabsensi1 = () => {
+//     return (
+//         <Tab.Navigator tabBar={props => <BottomNavigator {...props} />}>
+//             <Tab.Screen name="Home" component={Eabsensi} />
+//             <Tab.Screen name="Video" component={Video} />
+//             <Tab.Screen name="Eform" component={Eform} />
+//             <Tab.Screen name="Akun" component={Akun} />
+//         </Tab.Navigator>
+//     )
+// }
 
+// const Eleave1 = () => {
+//     return (
+//         <Tab.Navigator tabBar={props => <BottomNavigator {...props} />}>
+//             <Tab.Screen name="Home" component={Eabsensi} />
+//             <Tab.Screen name="Video" component={Video} />
+//             <Tab.Screen name="Eform" component={Eform} />
+//             <Tab.Screen name="Akun" component={Akun} />
+//         </Tab.Navigator>
+//     )
+// }
+
+// const PerformanceEmployee1 = () => {
+//     return (
+//         <Tab.Navigator tabBar={props => <BottomNavigator {...props} />}>
+//             <Tab.Screen name="Home" component={PerformanceEmployee} />
+//             <Tab.Screen name="Video" component={Video} />
+//             <Tab.Screen name="Eform" component={Eform} />
+//             <Tab.Screen name="Akun" component={Akun} />
+//         </Tab.Navigator>
+//     )
+// }
+
+// const Epay1 = () => {
+//     return (
+//         <Tab.Navigator tabBar={props => <BottomNavigator {...props} />}>
+//             <Tab.Screen name="Home" component={Epay} />
+//             <Tab.Screen name="Video" component={Video} />
+//             <Tab.Screen name="Eform" component={Eform} />
+//             <Tab.Screen name="Akun" component={Akun} />
+//         </Tab.Navigator>
+//     )
+// }
+
+// const Ehazard1 = () => {
+//     return (
+//         <Tab.Navigator tabBar={props => <BottomNavigator {...props} />}>
+//             <Tab.Screen name="Home" component={Ehazard} />
+//             <Tab.Screen name="Video" component={Video} />
+//             <Tab.Screen name="Eform" component={Eform} />
+//             <Tab.Screen name="Akun" component={Akun} />
+//         </Tab.Navigator>
+//     )
+// }
 
 const Router = () => {
     return (
@@ -54,7 +107,7 @@ const Router = () => {
             <Stack.Screen name="EhazardNew" component={EhazardNew} options={{headerShown:false}}/>
             <Stack.Screen name="EhazardApproval" component={EhazardApproval} options={{headerShown:false}}/>
             <Stack.Screen name="EhazardHistory" component={EhazardHistory} options={{headerShown:false}}/>
-              
+            
         </Stack.Navigator>
     )
 }

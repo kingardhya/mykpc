@@ -1,7 +1,9 @@
 import React from 'react'
 import { StyleSheet, Text, View ,  ScrollView , ImageBackground, Dimensions, TouchableOpacity} from 'react-native'
-import { AbsenHome, ButtonIcon , EformMenu, News} from '../../components'
+import { AbsenHome, ButtonIcon , EformMenu, News, TabItem } from '../../components'
 import { Header, Logo, LogoHome, UserCircle} from '../../assets'
+
+
 
 function Eabsensi ({navigation}){
 
@@ -14,6 +16,7 @@ function Eabsensi ({navigation}){
     const pressHandler2 = () => {
         navigation.navigate('EabsensiHistory');
     }
+
 
     return (
         <View>
@@ -37,8 +40,10 @@ function Eabsensi ({navigation}){
             </View>
             
             </ScrollView>
+
             
         </View>
+        
     )
 }
 

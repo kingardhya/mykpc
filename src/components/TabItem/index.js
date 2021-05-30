@@ -18,13 +18,13 @@ const TabItem = ({isFocused, onPress, onLongPress, label}) => {
 
     return (
         <TouchableOpacity
-        onPress={onPress}
-        onLongPress={onLongPress}
-        style={styles.container}>
-        <Icon />
-        <Text style={styles.text(isFocused)}>
-          {label}
-        </Text>
+            onPress={onPress}
+            onLongPress={onLongPress}
+            style={styles.container}>
+            <Icon />
+            <Text style={styles.text(isFocused)}>
+            {label}
+            </Text>
       </TouchableOpacity>
     )
 }
